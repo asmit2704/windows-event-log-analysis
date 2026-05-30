@@ -106,3 +106,6 @@ Place screenshots inside the screenshots folder.
 
 \- Event ID 4634
 
+# windows-event-log-analysis
+Windows Event Log Analysis for SOC monitoring, authentication investigation, and security event triage.
+3a88d674241affb1f6f403984aa332f3f24faf60
