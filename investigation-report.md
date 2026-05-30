@@ -6,7 +6,7 @@
 
 
 
-Investigate Windows Security Events using Event Viewer.
+Investigate Windows Security Logs and identify authentication-related events.
 
 
 
@@ -14,41 +14,35 @@ Investigate Windows Security Events using Event Viewer.
 
 
 
-\- Windows 11
+\- Operating System: Windows 11
 
-\- Event Viewer
-
-
-
-\## Events Analyzed
+\- Tool: Event Viewer
 
 
 
-\### Event ID 4624
+\## Event Analysis
+
+
+
+\### Event ID 4624 - Successful Login
 
 
 
 Description:
 
-Successful Login
+An account was successfully logged on.
 
 
 
-User:
+Observation:
 
-Asmit
-
-
-
-Date:
-
-30-May-2026
+A valid user successfully authenticated to the system.
 
 
 
-Result:
+Severity:
 
-Successful Authentication
+Informational
 
 
 
@@ -56,37 +50,25 @@ Successful Authentication
 
 
 
-\### Event ID 4625
+\### Event ID 4625 - Failed Login
 
 
 
 Description:
 
-Failed Login
+An account failed to log on.
 
 
 
-User:
+Observation:
 
-Asmit
-
-
-
-Date:
-
-30-May-2026
+An incorrect password was entered during authentication.
 
 
 
-Failure Reason:
+Severity:
 
-Bad Password
-
-
-
-Result:
-
-Authentication Failed
+Low
 
 
 
@@ -94,25 +76,51 @@ Authentication Failed
 
 
 
-\### Event ID 4634
+\### Event ID 4634 - Logoff
 
 
 
 Description:
 
-User Logoff
+An account was logged off.
 
 
 
-User:
+Observation:
 
-Asmit
+User session ended normally.
 
 
 
-Result:
+Severity:
 
-User Session Ended
+Informational
+
+
+
+\---
+
+
+
+\### Event ID 4672 - Special Privileges Assigned
+
+
+
+Description:
+
+Administrative privileges were assigned to a new logon session.
+
+
+
+Observation:
+
+Privileged account activity detected.
+
+
+
+Severity:
+
+Medium
 
 
 
@@ -120,7 +128,13 @@ User Session Ended
 
 
 
-Observed both successful and failed authentication events.
+\- Windows records detailed authentication activity.
+
+\- Failed login attempts can be identified using Event ID 4625.
+
+\- Successful logins can be tracked using Event ID 4624.
+
+\- Administrative activity can be monitored using Event ID 4672.
 
 
 
@@ -128,5 +142,5 @@ Observed both successful and failed authentication events.
 
 
 
-Windows Security Logs provide valuable visibility into authentication activity and can be used to detect suspicious login behavior.
+Windows Security Logs provide valuable information for monitoring authentication events and investigating suspicious activity. Understanding these logs is a fundamental SOC Analyst skill.
 

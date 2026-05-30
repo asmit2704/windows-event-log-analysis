@@ -10,17 +10,11 @@ This project demonstrates basic Security Operations Center (SOC) log analysis us
 
 
 
-\## Objectives
+\## Objective
 
 
 
-\- Explore Windows Security Logs
-
-\- Investigate login activity
-
-\- Analyze authentication events
-
-\- Document findings
+The objective of this project was to explore Windows Security Logs, identify authentication-related events, and understand how SOC analysts investigate login activity.
 
 
 
@@ -31,6 +25,10 @@ This project demonstrates basic Security Operations Center (SOC) log analysis us
 \- Windows 11
 
 \- Event Viewer
+
+\- Git
+
+\- GitHub
 
 
 
@@ -48,35 +46,23 @@ This project demonstrates basic Security Operations Center (SOC) log analysis us
 
 | 4634 | Logoff |
 
-| 4672 | Administrative Login |
+| 4672 | Special Privileges Assigned |
 
 
 
-\## Screenshots
+\## Investigation Process
 
 
 
-\### Security Logs
+1\. Opened Event Viewer.
 
+2\. Navigated to Windows Logs → Security.
 
+3\. Filtered logs using Event IDs.
 
-!\[Security Logs](screenshots/security-log-overview.png)
+4\. Investigated successful and failed logins.
 
-
-
-\### Successful Login
-
-
-
-!\[4624](screenshots/event4624.png)
-
-
-
-\### Failed Login
-
-
-
-!\[4625](screenshots/event4625.png)
+5\. Documented findings.
 
 
 
@@ -92,11 +78,31 @@ This project demonstrates basic Security Operations Center (SOC) log analysis us
 
 \- Security Triage
 
+\- Basic Incident Reporting
+
 
 
 \## Outcome
 
 
 
-Successfully investigated Windows authentication events and documented findings similar to basic SOC analyst workflows.
+Successfully identified and analyzed Windows authentication events and documented findings in an investigation report.
+
+
+
+\## Screenshots
+
+
+
+Place screenshots inside the screenshots folder.
+
+
+
+\- Security Logs Overview
+
+\- Event ID 4624
+
+\- Event ID 4625
+
+\- Event ID 4634
 
